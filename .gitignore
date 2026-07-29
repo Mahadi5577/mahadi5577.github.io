@@ -1,0 +1,29 @@
+# --- Not part of the published site ---
+
+# Other people's documents — must never be published
+Shrikanta_Paul_Resume_T.zip
+
+# Coursework / unrelated files
+Linear_Regression_Solution.docx
+
+# Superseded resume + old site design
+Mahadi_Resume_T.pdf
+index_previous_design.html
+
+# Tooling
+.claude/
+
+# LaTeX build artefacts (cv_4.tex and resume.cls are kept).
+# The built CV is published as MD_Nurol_Amin_CV.pdf in the site root.
+extracted/*.pdf
+extracted/*.aux
+extracted/*.log
+extracted/*.out
+extracted/*.synctex.gz
+extracted/*.fls
+extracted/*.fdb_latexmk
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
