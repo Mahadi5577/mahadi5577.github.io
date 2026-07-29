@@ -27,3 +27,6 @@ extracted/*.fdb_latexmk
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Source photo (published copy is profile.jpg)
+photo_*.jpg
