@@ -17,8 +17,6 @@ links:
     url: "https://pennylane.ai/"
   - name: "Stim (QEC simulation)"
     url: "https://github.com/quantumlib/Stim"
-  - name: "Quantum Journal"
-    url: "https://quantum-journal.org/"
   - name: "CORE Conference Ranks"
     url: "http://portal.core.edu.au/conf-ranks/"
 ---
