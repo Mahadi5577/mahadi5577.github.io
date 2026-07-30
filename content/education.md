@@ -41,7 +41,7 @@ title: "Education"
 </div>
 
 <div class="edu-item">
-<div class="edu-degree">Qiskit Global Summer School 2025 &mdash; Quantum Badge of Excellence <span class="pull-right">2025</span></div>
+<div class="edu-degree">Qiskit Global Summer School 2025 &mdash; Quantum Excellence <span class="pull-right">2025</span></div>
 <div>IBM Quantum &mdash; awarded for outstanding performance.</div>
 </div>
 

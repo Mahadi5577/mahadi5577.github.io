@@ -15,15 +15,17 @@ heading: "Awards &amp; Achievements"
 </div>
 
 <div class="aw">
-<div class="aw-title">Qiskit Global Summer School 2025 &mdash; Quantum Badge of Excellence
+<div class="aw-title">Qiskit Global Summer School 2025 &mdash; Quantum Excellence
   <span class="pull-right">2025</span></div>
 <div class="aw-note">Awarded for outstanding performance in IBM's flagship quantum computing summer
-  program.</div>
+  program.
+  <a href="https://www.credly.com/badges/a75dd94e-7940-4d55-a712-8240119af167/public_url" target="_blank"><i class="fa fa-check-circle"></i> Verify</a></div>
 </div>
 
 <div class="aw">
 <div class="aw-title">IBM Quantum Machine Learning Certification <span class="pull-right">2025</span></div>
-<div class="aw-note">Certified in quantum machine learning through the IBM Quantum Network.</div>
+<div class="aw-note">Certified in quantum machine learning through the IBM Quantum Network.
+  <a href="https://www.credly.com/badges/94c6fdc0-a253-482e-9f7b-c4f0c8b45dbe/public_url" target="_blank"><i class="fa fa-check-circle"></i> Verify</a></div>
 </div>
 
 <div class="aw">
