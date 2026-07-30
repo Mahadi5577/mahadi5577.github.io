@@ -6,19 +6,10 @@ boxes:
       - "Quantum Machine Learning"
       - "Quantum Key Distribution Security"
       - "Quantum Error Correction"
-      - "Quantum Repeaters &amp; Networks"
-      - "Quantum Metrology &amp; Sensing"
+      - "Quantum Repeaters & Networks"
+      - "Quantum Metrology & Sensing"
       - "Entanglement Certification"
       - "Explainable AI"
-links:
-  - name: "Qiskit"
-    url: "https://qiskit.org/"
-  - name: "PennyLane"
-    url: "https://pennylane.ai/"
-  - name: "Stim (QEC simulation)"
-    url: "https://github.com/quantumlib/Stim"
-  - name: "CORE Conference Ranks"
-    url: "http://portal.core.edu.au/conf-ranks/"
 ---
 
 <p align="justify">I am an M.Sc. student in Computer Science and Engineering at

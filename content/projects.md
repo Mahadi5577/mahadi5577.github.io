@@ -6,7 +6,7 @@ boxes:
       - "Kotlin / Android SDK"
       - "Node.js / WebSockets"
       - "Python / PyTorch"
-      - "IoT &amp; LoRa"
+      - "IoT & LoRa"
       - "HTML / CSS / JavaScript"
 ---
 
