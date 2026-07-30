@@ -12,51 +12,17 @@ boxes:
       - "Explainable AI"
 ---
 
-<p align="justify">I am an M.Sc. student in Computer Science and Engineering at
-<a href="https://daffodilvarsity.edu.bd/" target="_blank">Daffodil International University</a>, Dhaka,
-where I also completed my B.Sc. in the same department. My work is in <strong>quantum information science</strong>
-&mdash; specifically the places where it meets machine learning, network engineering, and security.</p>
+<p align="justify">I am a Computer Science graduate from
+<a href="https://daffodilvarsity.edu.bd/" target="_blank">Daffodil International University</a>, specializing in
+Quantum Information Science. My research lies at the intersection of quantum machine learning, quantum
+communication, quantum networking, and quantum security.</p>
 
-<p align="justify">My B.Sc. thesis,
-<a href="https://github.com/Mahadi5577/Congestion-Triggered-Entanglement-Distillation-for-Quantum-Repeaters" target="_blank"><em>Congestion-Triggered Distillation</em></a>,
-introduced a dual-threshold buffer-management policy that turns saturation in a quantum repeater's
-entanglement memory into a signal for when to distill. My M.Sc. thesis,
-<a href="https://github.com/Mahadi5577/Nema-Q" target="_blank"><em>NEMA-Q</em></a>, develops a hyperbolic
-quantum-classical graph neural network with observable-level explainability; the accompanying sole-author
-paper was accepted at ICEQT'26 for publication in Springer Nature proceedings.</p>
-
-<p align="justify">Four threads run through my current research:</p>
-<ul>
-<li><strong>Quantum machine learning and explainability</strong> &mdash; hybrid quantum-classical graph
-  networks, quantum observable attribution, barren-plateau-free architectures grounded in dynamical Lie
-  algebra dimension, and quantum reservoir computing audited against matched classical surrogates.</li>
-<li><strong>Quantum key distribution security</strong> &mdash; QBER monitoring is structurally blind to
-  photon-number-splitting and detector-blinding attacks, because both are built to leave the QBER untouched.
-  I show that learned detectors over observables a decoy-state receiver already computes close that gap with
-  no added hardware.</li>
-<li><strong>Quantum error correction and networking</strong> &mdash; logical teleportation between
-  heterogeneous QEC codes, seam-aware decoding across QPU boundaries, and buffer-management policies for
-  repeater entanglement memories.</li>
-<li><strong>Quantum metrology and certification</strong> &mdash; adaptive entanglement allocation for
-  distributed sensing under drifting noise, SDP-based genuine multipartite entanglement witnesses, and
-  entanglement-assisted covert communication over bosonic channels.</li>
-</ul>
-
-<p align="justify">How I work matters as much to me as what I work on. Every project is simulation-first and
-reproducible from a fixed seed, and I report the parts that did not go my way &mdash; seed variance, a
-minority-class collapse, a claimed robustness that turned out to come from a classical bypass &mdash;
-alongside the headline numbers. I have no lab and no funding; the work runs on open tooling and free compute,
-which I think makes the reproducibility discipline more important, not less.</p>
-
-<p align="justify">On teaching: I believe the job is to turn dense technical ideas into something a learner can
-build with. I lean on hands-on work, problem-solving, and active engagement, and I would rather a student
-leave able to run the experiment themselves than able to recite the result.</p>
-
-<p align="justify">If any of this overlaps with your own work, please get in touch &mdash; I am always open to
-collaboration.</p>
+<p align="justify">Current research interests include explainable quantum machine learning, hybrid
+quantum-classical learning architectures, quantum key distribution security, quantum error correction, quantum
+repeater networks, distributed quantum sensing, and entanglement-assisted communication. I conduct
+simulation-driven research using Python, Qiskit, PennyLane, Stim, CVXPY, and PyTorch.</p>
 
 <br>
-
 <div class="list-group">
 <button type="button" class="list-group-item list-group-item-action active">News</button>
 <button type="button" class="list-group-item list-group-item-action">
