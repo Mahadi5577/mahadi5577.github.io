@@ -1,7 +1,20 @@
 # Academic homepage — MD. Nurol Amin
 
+**Live site: <https://mahadi5577.github.io/>**
+
 Static personal academic site, served by GitHub Pages. No build step: plain HTML with
 Bootstrap 3, Font Awesome, and Academicons loaded from CDNs.
+
+[![Deploy](https://github.com/Mahadi5577/mahadi5577.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/Mahadi5577/mahadi5577.github.io/actions/workflows/pages.yml)
+
+MD. Nurol Amin — M.Sc. student in Computer Science and Engineering, Daffodil International
+University. Quantum information science: quantum machine learning, QKD security, quantum
+error correction and networking, quantum metrology.
+
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=h-1et3wAAAAJ) ·
+[ORCID](https://orcid.org/0009-0005-8289-7804) ·
+[LinkedIn](https://www.linkedin.com/in/nurol-amin-mahadi-16720a252/) ·
+[CV](https://mahadi5577.github.io/MD_Nurol_Amin_CV.pdf)
 
 ## Pages
 
