@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+
+{{ partial "nav.html" . }}
+
+<div class="container">
+<div class="bs-docs-section">
+<div class="row">
+
+  <div class="col-xs-3">
+{{ partial "sidebar.html" . }}
+  </div>
+
+  <div class="col-xs-9 border-left">
+    <div class="bs-component">
+
+{{ block "main" . }}{{ end }}
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="page-header"></div>
+{{ partial "footer.html" . }}
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

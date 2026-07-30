@@ -1,0 +1,85 @@
+baseURL = "https://mahadi5577.github.io/"
+title = "MD. Nurol Amin"
+
+# Keep /education.html style URLs rather than /education/, so every link that
+# already exists in the wild (and in the CV) keeps working.
+uglyURLs = true
+
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[markup.goldmark.renderer]
+  # Page bodies are hand-written HTML blocks; Goldmark must pass them through.
+  unsafe = true
+
+[params]
+  author = "MD. Nurol Amin"
+  email = "amin15-5577@diu.edu.bd"
+  affiliation = "M.Sc. Student, Department of Computer Science and Engineering"
+  affiliationShort = "M.Sc. Student, Department of CSE"
+  university = "Daffodil International University"
+  universityLong = "Daffodil International University, Dhaka, Bangladesh"
+  photo = "profile.jpg"
+  cv = "MD_Nurol_Amin_CV.pdf"
+  copyrightYear = "2026"
+
+[[params.social]]
+  name = "Google Scholar"
+  url = "https://scholar.google.com/citations?hl=en&user=h-1et3wAAAAJ"
+  icon = "ai ai-google-scholar-square ai-2x"
+
+[[params.social]]
+  name = "ORCID"
+  url = "https://orcid.org/0009-0005-8289-7804"
+  icon = "ai ai-orcid-square ai-2x"
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/Mahadi5577"
+  icon = "fa fa-github-square fa-2x"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/nurol-amin-mahadi-16720a252/"
+  icon = "fa fa-linkedin-square fa-2x"
+
+[[menu.main]]
+  name = "About Me"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Education"
+  url = "/education.html"
+  weight = 2
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publications.html"
+  weight = 3
+
+[[menu.main]]
+  name = "Research"
+  url = "/research.html"
+  weight = 4
+
+[[menu.main]]
+  name = "Projects"
+  url = "/projects.html"
+  weight = 5
+
+[[menu.main]]
+  name = "Awards"
+  url = "/awards.html"
+  weight = 6
+
+[[menu.main]]
+  name = "CV"
+  url = "/cv"
+  weight = 7
+  [menu.main.params]
+    external = true
+    href = "/MD_Nurol_Amin_CV.pdf"
+
+[languages.en]
+  locale = "en-US"

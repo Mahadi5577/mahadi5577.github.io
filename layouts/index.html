@@ -1,0 +1,4 @@
+{{ define "main" }}
+      <h3>{{ with .Params.heading }}{{ . | safeHTML }}{{ else }}{{ .Title }}{{ end }}</h3>
+{{ .Content }}
+{{ end }}

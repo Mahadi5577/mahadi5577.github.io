@@ -1,0 +1,48 @@
+<div class="bs-component">
+  {{ if .IsHome }}<h3></h3>{{ end }}
+  <img src="{{ site.Params.photo | relURL }}" width="155" height="155" class="img-thumbnail" alt="{{ site.Params.author }}">
+</div>
+
+<div class="bs-component">
+  <p>
+    {{ if .IsHome }}
+      {{ site.Params.affiliation }}<br>
+      {{ site.Params.universityLong }}<br>
+      <br>
+    {{ else }}
+      {{ site.Params.affiliationShort }}<br>
+      {{ site.Params.university }}<br><br>
+    {{ end }}
+    E. <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+  </p>
+
+  <p class="w3-large w3-text-theme">
+    {{ range site.Params.social }}
+      <a href="{{ .url }}" target="_blank" title="{{ .name }}"><i class="{{ .icon }}"></i></a>
+    {{ end }}
+  </p>
+</div>
+
+{{ range .Params.boxes }}
+<div class="bs-component">
+  <h3>{{ .title }}</h3>
+  <p>
+    {{ range .items }}
+      <i class="fa {{ if $.Params.boxIcon }}{{ $.Params.boxIcon }}{{ else }}fa-caret-right{{ end }}"></i>
+      {{ if reflect.IsMap . }}<a href="{{ .url }}" target="_blank">{{ .name }}</a>{{ else }}{{ . }}{{ end }}<br>
+    {{ end }}
+  </p>
+</div>
+{{ end }}
+
+{{ with .Params.links }}
+<div class="bs-component">
+  <h3>Links</h3>
+  <p>
+    {{ range . }}
+      <i class="fa fa-thumb-tack"></i>
+      <a href="{{ .url }}" target="_blank">{{ .name }}</a><br>
+    {{ end }}
+  </p>
+</div>
+{{ end }}

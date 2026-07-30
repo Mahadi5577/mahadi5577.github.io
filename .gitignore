@@ -30,3 +30,8 @@ desktop.ini
 
 # Source photo (published copy is profile.jpg)
 photo_*.jpg
+
+# Hugo build output
+/public/
+/resources/_gen/
+.hugo_build.lock

@@ -2,8 +2,9 @@
 
 **Live site: <https://mahadi5577.github.io/>**
 
-Static personal academic site, served by GitHub Pages. No build step: plain HTML with
-Bootstrap 3, Font Awesome, and Academicons loaded from CDNs.
+Personal academic site built with [Hugo](https://gohugo.io/) and deployed to GitHub Pages.
+Styling is Bootstrap 3, Font Awesome, and Academicons from CDNs — no theme dependency and
+no npm toolchain; the layouts in `layouts/` are the whole design.
 
 [![Deploy](https://github.com/Mahadi5577/mahadi5577.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/Mahadi5577/mahadi5577.github.io/actions/workflows/pages.yml)
 
@@ -16,38 +17,67 @@ error correction and networking, quantum metrology.
 [LinkedIn](https://www.linkedin.com/in/nurol-amin-mahadi-16720a252/) ·
 [CV](https://mahadi5577.github.io/MD_Nurol_Amin_CV.pdf)
 
-## Pages
+## Layout
 
-| File | Section |
-|---|---|
-| `index.html` | About Me, news, work in progress |
-| `education.html` | Degrees, training, technical skills |
-| `publications.html` | Publications by status, datasets |
-| `research.html` | Research programmes and their codebases |
-| `projects.html` | Shipped software and open-data releases |
-| `awards.html` | Awards, certifications, references |
-
-`MD_Nurol_Amin_CV.pdf` is the built CV, linked from the navbar.
-
-## CV source
-
-`extracted/cv_4.tex` with `extracted/resume.cls`. Rebuild:
-
-```bash
-cd extracted
-pdflatex cv_4.tex
-cp cv_4.pdf ../MD_Nurol_Amin_CV.pdf
 ```
+hugo.toml              site config, menu, social links, shared params
+content/
+  _index.md            About Me (home)
+  education.md         degrees, training, technical skills
+  publications.md      publications by status, datasets
+  research.md          research programmes and their codebases
+  projects.md          shipped software and open-data releases
+  awards.md            awards, certifications, references
+layouts/
+  index.html           home template
+  _default/            baseof, single, list
+  partials/            head, nav, sidebar, footer
+static/                profile.jpg, CV PDF — copied to the site root verbatim
+extracted/             LaTeX CV source (not published)
+```
+
+`uglyURLs` is on, so pages build to `/education.html` rather than `/education/`. That keeps
+every URL that already exists in the wild — and in the printed CV — working.
+
+## Editing
+
+Page bodies are HTML inside Markdown files (`markup.goldmark.renderer.unsafe = true`), so
+the existing markup carried over unchanged. Sidebar boxes and the pinned Links list are
+declared in each page's front matter rather than repeated per page:
+
+```yaml
+---
+title: "Research Experience"
+boxes:
+  - title: "Themes"
+    items: ["Quantum machine learning", "QKD security"]
+---
+```
+
+Shared contact details, the photo, and the social icon row live in `[params]` in
+`hugo.toml` — change them in one place and every page follows.
 
 ## Local preview
 
 ```bash
-python -m http.server 8000
+hugo server -D          # http://localhost:1313
+hugo --gc --minify      # one-off build into public/
 ```
 
-Then open <http://localhost:8000>.
+## Deployment
 
-## Adding the profile photo
+Any push to `main` triggers [`.github/workflows/pages.yml`](.github/workflows/pages.yml),
+which installs Hugo Extended, builds, and publishes `public/`.
 
-Drop a `profile.jpg` in the repository root. Roughly 155×170 px or any 1:1.1 crop.
-Until it exists, each page shows a grey placeholder.
+Pages is configured with `build_type: workflow`, so this workflow is the *only* thing that
+deploys the site — a push with no working workflow silently publishes nothing.
+
+## CV
+
+Source is `extracted/cv_4.tex` with `extracted/resume.cls`. Rebuild and publish:
+
+```bash
+cd extracted
+pdflatex cv_4.tex
+cp cv_4.pdf ../static/MD_Nurol_Amin_CV.pdf
+```

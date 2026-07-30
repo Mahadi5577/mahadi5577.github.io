@@ -1,0 +1,28 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{ "/" | relURL }}"><font color="black">{{ site.Params.author }}</font></a>
+    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        {{ $page := . }}
+        {{ range site.Menus.main }}
+          {{/* Hugo lowercases menu .URL, which breaks case-sensitive asset paths
+               such as the CV PDF on GitHub Pages. Where an entry supplies an
+               explicit `href` param, use it verbatim. */}}
+          {{ $href := .URL }}
+          {{ with .Params.href }}{{ $href = . }}{{ end }}
+          {{/* uglyURLs makes the home page's RelPermalink /index.html, which never
+               equals the menu's "/", so match the home entry explicitly. */}}
+          {{ $active := or (and $page.IsHome (eq $href "/")) (and (not $page.IsHome) (eq $page.RelPermalink ($href | relURL))) }}
+          <li{{ if $active }} class="active"{{ end }}>
+            <a href="{{ $href | relURL }}"{{ if .Params.external }} target="_blank"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
