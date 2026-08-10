@@ -18,7 +18,7 @@ boxes:
 <div class="pub-item">
 <div class="pub-title">NEMA-Q: A Hyperbolic Quantum-Classical Graph Neural Network with Observable-Level
   Explainability <span class="badge badge-success">Conference</span></div>
-<div>MD. Nurol Amin (sole author)</div>
+<div>MD. Nurol Amin (first author)</div>
 <div class="pub-venue"><em>ICEQT'26 &mdash; 5th International Conference on Emergent Quantum Technologies</em>,
   part of CSCE'26, Las Vegas, USA, July 20&ndash;23, 2026. Paper ID ICE7405.</div>
 <div class="pub-note">Proceedings published by Springer Nature. Indexed in Scopus, EI Compendex, DBLP, ACM

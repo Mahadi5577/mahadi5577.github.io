@@ -5,7 +5,7 @@ heading: "Awards &amp; Achievements"
 
 <div class="aw">
 <div class="aw-title">Paper Accepted at ICEQT'26 / CSCE'26 <span class="pull-right">2026</span></div>
-<div class="aw-note">Sole-author regular research paper accepted for Springer Nature proceedings
+<div class="aw-note">First-author regular research paper accepted for Springer Nature proceedings
   (Scopus, EI Compendex, DBLP, ACM DL, Clarivate Web of Science). Las Vegas, USA, July 20&ndash;23, 2026.</div>
 </div>
 
